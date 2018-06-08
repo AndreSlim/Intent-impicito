@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andreslim.intentimplicito.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/boton_telefono"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="180dp"
+        tools:ignore="ContentDescription,
+                    MissingConstraints,
+                    UnusedAttribute,
+                    VectorDrawableCompat"
+        android:contentDescription=""
+        android:elevation="12dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/numero_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="84dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/boton_telefono"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_above="@+id/boton_telefono"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
